@@ -20,7 +20,7 @@ resources:
 - name: cf-resource
   type: cf
   source:
-    api: https://apps.local.pcfdev.io
+    api: https://api.local.pcfdev.io
     username: ((cf-user))
     password: (cf-pass))
     organization: (cf-org))
