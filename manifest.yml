@@ -2,5 +2,5 @@
 applications:
 - name: myappforfly
   memory: 64M
-  command: node bin/www
+  command: node ./bin/www
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
