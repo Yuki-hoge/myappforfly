@@ -15,7 +15,7 @@ resources:
 - name: repo
   type: git
   source:
-    uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
+    uri: https://github.com/Yuki-hoge/myappforfly.git
 
 - name: cf-resource
   type: cf
