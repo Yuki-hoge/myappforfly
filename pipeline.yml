@@ -22,7 +22,7 @@ resources:
   source:
     api: ((cf-api))
     username: ((cf-user))
-    password: (cf-pass))
-    organization: (cf-org))
+    password: ((cf-pass))
+    organization: ((cf-org))
     space: ((cf-space))
     skip_cert_check: true
