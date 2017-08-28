@@ -1,0 +1,27 @@
+---
+jobs:
+- name: mydeploy
+  public: true
+  serial: true
+  plan:
+  - get: repo
+  - put: cf-resource
+    params:
+      manifest: repo/manifest.yml
+      environment_variables:
+        Fuga: ((fuga))
+
+resources:
+- name: repo
+  type: git
+  source:
+    uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
+
+- name: cf-resource
+  type: cf
+  source:
+    api: https://apps.local.pcfdev.io
+    username: ((cf-user))
+    password: (cf-pass))
+    organization: (cf-org))
+    space: ((cf-space))
